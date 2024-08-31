@@ -5,7 +5,7 @@ st.set_page_config(page_title="Portfolio of Robert David Cala", layout="centered
 
 st.title("Portfolio of Robert David Cala")
 
-profile_image = Image.open("profile.jpg")
+profile_image = Image.open("assets/profile.jpg")
 
 if 'show_image' not in st.session_state:
     st.session_state.show_image = False
@@ -70,7 +70,7 @@ st.write("""
 Feel free to reach out to me via [09631668797](tel:09631668797) or email me at [robertdavid.cala@cit.edu](mailto:robertdavid.cala@cit.edu) for any inquiries or collaboration opportunities!
 """)
 
-video_file = open("myvideo.mp4", "rb")
+video_file = open("assets/myvideo.mp4", "rb")
 video_bytes = video_file.read()
 st.video(video_bytes)
 
